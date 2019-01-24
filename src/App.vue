@@ -3,8 +3,8 @@
     <h1>{{title}}</h1>
     <h2>Menu</h2>
     <Navbar/>
-    <AllFriends/>
-    <OnlineFriends/>
+    <AllFriends :friends="friends"/>
+    <OnlineFriends :friends="friends"/>
   </div>
 </template>
 
@@ -22,7 +22,13 @@ export default {
   },
   data() {
     return {
-      title: "My first Vue app, wohoo :)"
+      title: "My first Vue app, wohoo :)",
+      friends: [
+        { name: "Tinashe", online: true },
+        { name: "Blessing", online: false },
+        { name: "Natalie", online: true },
+        { name: "Amanda", online: false }
+      ]
     };
   }
 };
