@@ -4,8 +4,8 @@
     <h2>Menu</h2>
     <Navbar/>
     <Blogs/>
-    <AllFriends :friends="friends"/>
-    <OnlineFriends :friends="friends"/>
+    <!-- <AllFriends :friends="friends"/>
+    <OnlineFriends :friends="friends"/> -->
   </div>
 </template>
 
