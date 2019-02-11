@@ -3,6 +3,7 @@
     <h1>{{title}}</h1>
     <h2>Menu</h2>
     <Navbar/>
+    <Blogs/>
     <AllFriends :friends="friends"/>
     <OnlineFriends :friends="friends"/>
   </div>
@@ -10,6 +11,7 @@
 
 <script>
 import Navbar from "./Navbar";
+import Blogs from "./Blogs";
 import AllFriends from "./AllFriends";
 import OnlineFriends from "./OnlineFriends";
 
@@ -18,7 +20,8 @@ export default {
   components: {
     Navbar,
     OnlineFriends,
-    AllFriends
+    AllFriends,
+    Blogs
   },
   data() {
     return {
